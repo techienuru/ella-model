@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title> Home | Ella Models</title>
+</head>
+<body>
+           <!--  -->
+<!-- STATIC HEADER -->
+    <header>
+        <img src="./ENC 2 White bg.png" alt="EL-NUR">
+        <p class="header-text">This website was created by <a href="#EL-NUR">El-Nur</a> </p>
+            </header><br><br>
+            
+<!-- MAIN BODY -->
+    <main>
+
+<!-- STATIC MAIN BODY -->
+<div class="static-ellamodels">
+    <span><b> ELLA MODELS. </b></span>
+    <!-- <div class="links-hamburger"> -->
+<ul id="link">
+    <a href="./index.html" class="active">Home</a>
+    <a href="./em-models.html">Models</a>
+    <a href="./em-about.html">About</a>
+    <a href="./em-apply.html">Apply</a>
+    <a href="./em-contact.html" >Contact</a>
+</ul>
+<h1 class="hamburger" onclick="display()" onmousedown="noDisplay()">&#9776;</h1>
+        <!-- </div> -->
+</div><br>
+<!-- SCROLLING MAIN BODY -->
+<div class="scrolling-section">
+<p>ELLA</p>
+<p>MODELS</p>
+<p>NEW YORK</p><br>
+<p class="scrolling-section-text">The first New York modelling agency to 
+    <legend>represent a diverse selection of models</legend> <legend>from all nationalities, ethnicities and ages.</legend> </p>
+<button class="seeMoreButton"><a href="./em-models.html"> See Models </a></button>
+<footer>
+    &copy; 2023 by Ella Models. Proudly created in FMC,Keffi.
+</footer>
+
+</div>
+    </main>
+<!-- HAMBURGER JAVASCRIPT CODE -->    
+    <script>
+        window.alert("Mobile view currently unavailable, Switch to desktop site for pleasant view");
+        function display() {
+            document.getElementById("link").style.display="initial";
+        }
+        function noDisplay() {
+            document.getElementById("link").style.display="none";
+        }
+    </script>
+</body>
+</html>
