@@ -1,0 +1,1 @@
+Fully responsive model site
