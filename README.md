@@ -1,1 +1,1 @@
-Fully responsive model site
+First version of Ella Models ( not fully responsive)..... Only Desktop view available 
