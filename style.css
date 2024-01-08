@@ -1,0 +1,361 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#index-body > div:first-child {
+  height: auto;
+}
+#index-body > div:first-child > nav {
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+  background-color: white;
+}
+#index-body > div:first-child > #index-inner {
+  background-color: rgba(0, 0, 0, 0.822);
+  background-image: url(images/Model.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  background-attachment: scroll;
+  height: auto;
+}
+#index-inner > nav {
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  height: auto;
+}
+#index-inner > nav > p {
+  color: white;
+  font-weight: bolder;
+}
+#index-inner > nav > button {
+  background-color: rgba(184, 89, 22, 0.657);
+  border: none;
+  outline: none;
+  width: fit-content;
+}
+#index-inner > nav > button:focus {
+  outline: none;
+  background-color: white;
+  border: none;
+}
+#index-inner > nav > ul > li > a {
+  color: white;
+  font-size: 17px;
+  position: relative;
+  width: fit-content;
+  padding: 0px;
+}
+#index-inner > nav > ul > li > a::after {
+  content: "";
+  background-color: chocolate;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transition: width 0.5s;
+}
+#index-inner > nav > ul > li > a:hover::after {
+  width: 100%;
+}
+#index-inner > nav > ul > li > a:hover {
+  color: chocolate;
+}
+#index-inner > nav > ul > li > .active {
+  color: chocolate;
+}
+/* #index-inner > div {
+}*/
+#index-inner > div > #chocolate-text {
+  color: chocolate;
+  font-size: 90px;
+}
+#index-inner > div > p:nth-of-type(3) {
+  color: white;
+  font-size: 50px;
+}
+#index-inner > div > p:nth-of-type(4) {
+  font-size: 20px;
+}
+#index-inner > div > a {
+  background-color: chocolate;
+  border-radius: 0px;
+  color: white;
+  transition: all 0.9s;
+  width: fit-content;
+}
+#index-inner > div > a:hover {
+  text-shadow: 0px 0px 5px red;
+  text-decoration: underline;
+}
+#index-inner > p {
+  font-weight: bolder;
+  margin: 20px 0px 0px 15px;
+}
+@media all and (width <= 395px) {
+  #index-inner > div > #chocolate-text {
+    font-size: 70px;
+  }
+}
+@media all and (width <= 295px) {
+  #index-inner > div > #chocolate-text {
+    font-size: 50px;
+  }
+}
+/* End Of index.html */
+
+/* about.html */
+#about-body > main > .container-fluid {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+#about-body > main > .container-fluid > nav {
+  position: sticky;
+  top: 80px;
+}
+#about-body > main > .container-fluid > nav > ul > li > a {
+  position: relative;
+}
+#about-body > main > .container-fluid > nav > ul > li > a::after {
+  content: "";
+  background-color: chocolate;
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transition: width 0.5s;
+}
+#about-body > main > .container-fluid > nav > ul > li > a:hover:after {
+  width: 100%;
+}
+#about-body > main > .container-fluid > nav > ul > li > a:hover {
+  color: chocolate;
+}
+#about-body > main > .container-fluid > nav > ul > li > .active {
+  color: chocolate;
+}
+#about-body > main > .container-fluid > #about-us-text {
+  color: chocolate;
+  font-size: 50px;
+}
+#about-inner-body > #about-inner-body-left {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+@media all and (width <= 577px) {
+  #about-body > main > .container-fluid > nav {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+/* End Of about.html */
+
+/* models.html */
+#models-body > main > .container-fluid {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+#models-body > main > .container-fluid > nav {
+  position: sticky;
+  top: 80px;
+}
+#models-body > main > .container-fluid > nav > ul > li > a {
+  position: relative;
+}
+#models-body > main > .container-fluid > nav > ul > li > a::after {
+  content: "";
+  background-color: chocolate;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: scale(0);
+  transition: transform ease-in-out 0.6s;
+}
+#models-body > main > .container-fluid > nav > ul > li > a:hover:after {
+  transform: scale(1);
+}
+#models-body > main > .container-fluid > nav > ul > li > a:hover {
+  color: chocolate;
+}
+#models-body > main > .container-fluid > nav > ul > li > .active {
+  color: chocolate;
+}
+#models-body > main > .container-fluid > #models-text {
+  color: chocolate;
+  font-size: 50px;
+}
+#models-inner-body > #models-inner-body-left {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+#models-inner-body > .col-sm-3 {
+  position: relative;
+}
+#models-inner-body > .col-sm-3 > img {
+  background-color: rgba(255, 255, 255, 0.801);
+}
+#models-inner-body > .col-sm-3 > button {
+  position: absolute;
+  left: 36%;
+  top: 43%;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+#models-inner-body > .col-sm-3:hover button {
+  display: block;
+}
+#models-inner-body > .col-sm-3:hover img {
+  opacity: 0.3;
+}
+#models-inner-body > .col-sm-3 > a {
+  text-decoration: none;
+  color: chocolate;
+  position: relative;
+}
+#models-inner-body > .col-sm-3 > a::after {
+  content: "";
+  background-color: chocolate;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 50%;
+  transition: all ease-in-out 0.3s;
+}
+#models-inner-body > .col-sm-3 > a:hover::after {
+  width: 100%;
+}
+
+@media all and (width <= 577px) {
+  #models-body > main > .container-fluid > nav {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+/* End Of models.html */
+
+/* apply.html */
+#apply-body > main > .container-fluid {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+#apply-body > main > .container-fluid > nav {
+  position: sticky;
+  top: 80px;
+}
+#apply-body > main > .container-fluid > nav > ul > li > a {
+  position: relative;
+}
+#apply-body > main > .container-fluid > nav > ul > li > a::after {
+  content: "";
+  background-color: chocolate;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: scale(0);
+  transition: transform ease-in-out 0.6s;
+}
+#apply-body > main > .container-fluid > nav > ul > li > a:hover:after {
+  transform: scale(1);
+}
+#apply-body > main > .container-fluid > nav > ul > li > a:hover {
+  color: chocolate;
+}
+#apply-body > main > .container-fluid > nav > ul > li > .active {
+  color: chocolate;
+}
+#apply-body > main > .container-fluid > #apply-text {
+  color: chocolate;
+  font-size: 50px;
+}
+#apply-inner-body > div {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+#apply-inner-body > div > div > #apply-inner-body-col > h2 {
+  color: chocolate;
+}
+#apply-inner-body > div > div > #apply-inner-body-last-col {
+  background-color: chocolate;
+}
+
+@media all and (width <= 577px) {
+  #apply-body > main > .container-fluid > nav {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+/* End Of apply.html */
+
+/* contact.html */
+#contact-body > main > .container-fluid {
+  background-color: rgba(0, 0, 0, 0.822);
+}
+#contact-body > main > .container-fluid > nav {
+  position: sticky;
+  top: 80px;
+}
+#contact-body > main > .container-fluid > nav > ul > li > a {
+  position: relative;
+}
+#contact-body > main > .container-fluid > nav > ul > li > a::after {
+  content: "";
+  background-color: chocolate;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  transform: scale(0);
+  transition: transform ease-in-out 0.6s;
+}
+#contact-body > main > .container-fluid > nav > ul > li > a:hover:after {
+  transform: scale(1);
+}
+#contact-body > main > .container-fluid > nav > ul > li > a:hover {
+  color: chocolate;
+}
+#contact-body > main > .container-fluid > nav > ul > li > .active {
+  color: chocolate;
+}
+#contact-body > main > .container-fluid > #contact-text {
+  color: chocolate;
+  font-size: 50px;
+}
+#contact-inner-body {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+#contact-inner-body > div > #contact-inner-body-chocolate {
+  color: chocolate;
+}
+#contact-inner-body > #contact-inner-body-last-col {
+  background-color: chocolate;
+}
+#contact-inner-body-subscribe:focus {
+  box-shadow: 0px 3px 14px black;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: none;
+  outline: none;
+  background-color: chocolate;
+}
+@media all and (width <= 577px) {
+  #contact-body > main > .container-fluid > nav {
+    position: sticky;
+    top: 120px;
+  }
+}
+
+/* End Of contact.html */
